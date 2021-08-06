@@ -1,0 +1,27 @@
+/* pages/login/login.wxss */
+.img {
+    display: flex;
+    justify-content: center;
+}
+.img image {
+    width: 200rpx;
+    height: 200rpx;
+    padding-top: 50rpx;
+    margin-bottom: 50rpx;
+}
+.inputdiv {
+    width: 70%;
+    height: 60rpx;
+    margin: 50rpx 100rpx;
+    padding-left: 20rpx;
+    border: 1rpx solid #d43c33;
+    border-radius: 100rpx;
+    display: flex;
+    align-items: center;
+}
+.inputdiv .inputcontent {
+    padding-left: 20rpx;
+}
+.logintxt {
+    color: white;
+}

@@ -1,0 +1,18 @@
+<!--pages/login/login.wxml-->
+<view>
+    <view class="img">
+        <image src="/static/images/login.jpg"></image>
+    </view>
+
+    <view>
+        <view class="inputdiv">
+            <text class="iconfont icon-ziyuan"></text>
+            <input class="inputcontent" type="number" placeholder="输入手机号" />
+        </view>
+        <view class="inputdiv">
+            <text class="iconfont icon-mima"></text>
+            <input class="inputcontent" password type="text" placeholder="输入密码" />
+        </view>
+        <button style="width: 75%; background: #d43c33;border-radius: 100rpx" type="warn"><text class="logintxt">登录</text></button>
+    </view>
+</view>
