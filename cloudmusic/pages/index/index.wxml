@@ -37,12 +37,14 @@
         <NavHeader title="推荐歌曲" nav="为你精心推荐"></NavHeader>
         
         <!--内容区域-->
-        <scroll-view class="recommendScroll" enable-flex scroll-x>
-            <view class="srcollItem" wx:for="{{recommendList}}" wx:key="id">
-                <image src="{{item.picUrl}}"></image>
-                <text>{{item.name}}</text>
-            </view>
-        </scroll-view>
+        <swiper>
+            <scroll-view class="recommendScroll" enable-flex scroll-x>
+                <view class="srcollItem" wx:for="{{recommendList}}" wx:key="id">
+                    <image src="{{item.picUrl}}"></image>
+                    <text>{{item.name}}</text>
+                </view>
+            </scroll-view>
+        </swiper>
     </view>
 
     <!--最新专辑区域-->
