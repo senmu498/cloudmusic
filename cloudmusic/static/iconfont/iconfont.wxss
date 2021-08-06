@@ -13,30 +13,6 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-icon_pc:before {
-    content: "\e607";
-  }
-  
-  .icon-icon_pc-copy:before {
-    content: "\e7d8";
-  }
-  
-  .icon-shipin-copy:before {
-    content: "\e7d7";
-  }
-  
-  .icon-shouye:before {
-    content: "\e602";
-  }
-  
-  .icon-shipin:before {
-    content: "\e622";
-  }
-  
-  .icon-shouye-copy:before {
-    content: "\e7d6";
-  }
-  
   .icon-zhuye:before {
     content: "\e60f";
   }
