@@ -1,40 +1,18 @@
-import request from "../../utils/request";
+// pages/video/video.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo: {}, //用户信息
-    collectionList: [], //收藏歌单数据
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: async function (options) {
-    //用户信息
-    let userInfo = wx.getStorageSync('userInfo');
-    if(userInfo){
-      this.setData({
-        userInfo
-      })
-    }
+  onLoad: function (options) {
 
-    //获取收藏歌单数据
-    let collectionListData = await request('/user/playlist', {uid: 2});
-    this.setData({
-      collectionList: collectionListData.banners
-    });
-  },
-
-  /**
-  * 跳转到登录界面
-  */
-  toLogin(){
-    wx.navigateTo({
-      url: '/pages/login/login',
-    })
   },
 
   /**

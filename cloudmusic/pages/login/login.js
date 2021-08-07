@@ -1,11 +1,35 @@
 // pages/login/login.js
+import request from "../../utils/request";
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+  },
 
+  loginSubmit: async function (e) {
+    let phone = e.detail.value.phone;
+    let password = e.detail.value.password;
+    let result = await request('/login/cellphone', {phone: phone, password: password});
+    if(result.code == 200){
+      wx.showToast({
+        title: '登陆成功'
+      });
+
+      //将用户信息存储到本地
+      wx.setStorageSync('userInfo', JSON.stringify(result.profile));
+
+      //跳转到个人中心
+      wx.reLaunch({
+        url: '/pages/personal/personal'
+      });
+    }else {
+      wx.showToast({
+        title: '登陆失败' + result.msg
+      })
+    }
   },
 
   /**

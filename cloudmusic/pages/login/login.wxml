@@ -5,14 +5,16 @@
     </view>
 
     <view>
-        <view class="inputContainer">
-            <text class="iconfont icon-ziyuan"></text>
-            <input class="inputContent" type="number" placeholder="输入手机号" />
-        </view>
-        <view class="inputContainer">
-            <text class="iconfont icon-mima"></text>
-            <input class="inputContent" password type="text" placeholder="输入密码" />
-        </view>
-        <button style="width: 75%; background: #d43c33;border-radius: 100rpx" type="warn"><text class="logintxt">登录</text></button>
+        <form bindsubmit="loginSubmit">
+            <view class="inputContainer">
+                <text class="iconfont icon-ziyuan"></text>
+                <input class="inputContent" type="number" placeholder="输入手机号" name="phone"/>
+            </view>
+            <view class="inputContainer">
+                <text class="iconfont icon-mima"></text>
+                <input class="inputContent" type="password" placeholder="输入密码" name="password"/>
+            </view>
+            <button formType="submit" style="width: 75%; background: #d43c33;border-radius: 100rpx" type="warn"><text class="logintxt">登录</text></button>
+        </form>
     </view>
 </view>
