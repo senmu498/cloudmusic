@@ -1,0 +1,89 @@
+/* pages/personal/personal.wxss */
+.userContainer {
+    width: 94%;
+    height: 150rpx;
+    padding-left: 20rpx;
+    margin-left: 10rpx;
+    margin-top: 10rpx;
+    border-radius: 10rpx;
+    display: flex;
+    background: #fbfbfb;
+}
+.userContainer .tologin {
+    display: flex;
+    width: 95%;
+    height: 150rpx;
+}
+.userContainer .tologin image {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 150rpx;
+}
+.userContainer .tologin .userInfo {
+    width: 150rpx;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40rpx;
+    padding-left: 20rpx;
+}
+.userContainer .tologin .userInfo .userName {
+    font-size: 35rpx;
+}
+.userContainer .tologin .userInfo .userVip {
+    font-size: 25rpx;
+    color: #bbb;
+}
+.userContainer .iconfont {
+    padding-top: 10rpx;
+    font-size: 40rpx;
+}
+.navContainer {
+    display: flex;
+    margin-top: 20rpx;
+}
+.navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+.navItem .iconfont {
+    width: 100rpx;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 50rpx;
+    color: rgb(240, 19, 19);
+    margin: 20rpx 0;
+}
+.navItem text {
+    font-size: 26rpx;
+}
+.collectionContainer {
+    width: 94%;
+    margin-top: 30rpx;
+    padding-left: 20rpx;
+    margin-left: 10rpx;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10rpx;
+    background: #fbfbfb;
+}
+.collectionContent {
+    padding-top: 15rpx;
+    display: flex;
+}
+.collectionContent image {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 20rpx;
+}
+.collectionContent .description {
+    padding-top: 30rpx;
+    padding-left: 30rpx;
+}
+.description .count {
+    padding-top: 20rpx;
+    font-size: 25rpx;
+    color: #666666;
+}

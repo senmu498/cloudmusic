@@ -1,0 +1,22 @@
+<!--pages/search/search.wxml-->
+<view>
+  <!-- 搜索区域-->
+  <view class="searchContainer">
+    <input class="searchtxt" type="text" placeholder="试试搜索你想要的吧" name="searchtxt"/>
+    <text class="iconfont icon-sousuo suosuo"></text>
+  </view>
+
+    <!--热搜榜-->
+    <view class="hotContainer">
+      <view class="left">
+        <block wx:for="{{hotList}}" wx:key="first" wx:if="{{index%2==0}}">
+          <text class="hotItem">{{index+1}}  {{item.first}}</text>
+        </block>
+      </view>
+      <view class="right">
+        <block wx:for="{{hotList}}" wx:key="first" wx:if="{{index%2==1}}">
+          <text class="hotItem">{{index+1}}  {{item.first}}</text>
+        </block>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mv/mv",
+    "pages/personal/personal",
+    "pages/personal/login/login",
+    "pages/index/search/search"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "window": {
+    "navigationBarBackgroundColor": "#d43c33",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "云音乐"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d43c33",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/images/tabs/icon-shouye.png",
+        "selectedIconPath": "/static/images/tabs/icon-shouye-copy.png"
+      },
+      {
+        "pagePath": "pages/mv/mv",
+        "text": "MV",
+        "iconPath": "/static/images/tabs/icon-MV-copy.png",
+        "selectedIconPath": "/static/images/tabs/icon-MV.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/static/images/tabs/icon-icon_pc.png",
+        "selectedIconPath": "/static/images/tabs/icon-icon_pc-copy.png"
+      }
+    ]
+  }
+}
